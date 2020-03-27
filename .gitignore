@@ -1,0 +1,6 @@
+# ignore secrets.tfvars
+secrets/secrets.tfvars
+terraform.tfstate.d/*
+.terraform/*
+terraform.plan*
+
