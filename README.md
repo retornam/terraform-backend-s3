@@ -6,7 +6,7 @@ version your terraform statefiles
 
 ```hcl
 module "backend_s3" {
-	source = "git::https://github.com/retornam/terraform-backend-s3.git?ref=master"
+	source = "git::https://github.com/retornam/terraform-backend-s3.git?ref=main"
 	environment = "production"
 	region = "us-west-2"
 	bucket = "example-bucket"
