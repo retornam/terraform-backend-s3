@@ -3,7 +3,7 @@ variable "environment" {
 }
 
 variable "region" {
-  type = string
+  type    = string
   default = "us-west-2"
 }
 
@@ -12,9 +12,9 @@ variable "bucket" {
   description = "name of S3 bucket"
 }
 
-variable "dynamodb_name" {
+variable "name" {
   type        = string
-  description = "name of dynamodb table"
+  description = "name for the KMS key as well as DynamoDB table"
 }
 
 variable "readcapacity" {
