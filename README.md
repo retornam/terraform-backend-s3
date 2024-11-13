@@ -1,6 +1,6 @@
 # terraform-backend-s3
 
-This terraform module creates an S3 bucket and a DynamoDB table to store and 
+This terraform module creates an S3 bucket and a DynamoDB table to store and
 version your terraform statefiles
 
 
@@ -10,7 +10,7 @@ module "backend_s3" {
 	environment = "production"
 	region = "us-west-2"
 	bucket = "example-bucket"
-	dynamodb_name = "example-bucket-table"
+	name = "example-bucket-table"
 	readcapacity = 2
 	writecapacity = 2
 }
@@ -37,7 +37,7 @@ destroy-target:                   terraform destroy
 |------|-------------|------|---------|----------|
 | environment | prod/staging/ | string | null | yes |
 | bucket | name of the bucket | string | null | yes |
-| dynamodb_name | name of the dynamo db table | string | null | yes |
+| name | name of the KMS key and DynamoDB able | string | null | yes |
 | readcapacity | the read capacity of the dynamodb table | string | null | yes |
 | writecapacity | the write capacity of the dynamodb table | string | null | yes |
 
